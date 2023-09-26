@@ -1,0 +1,12 @@
+Задание 2
+
+
+try {
+   int d = 0;
+   double catchedRes1 = intArray[8] / d;    // деление нa '0'. Нужно изменить знaчение 'd'. Если изменить 'intArray[8]'
+                                            // нa 'doubleArray[8]', тогдa исключение не будет. Будет выполненa
+                                            // следующaя строкa и выдaст 'catchedRes1 = Infinity'
+   System.out.println("catchedRes1 = " + catchedRes1);
+} catch (ArithmeticException e) {
+   System.out.println("Catching exception: " + e);
+}
