@@ -11,7 +11,6 @@ public class Main {
         String string = in.nextLine();
         if (string.isEmpty()){
             throw new RuntimeException("Пустые строки вводить нельзя");
-
         }
     }
 }
