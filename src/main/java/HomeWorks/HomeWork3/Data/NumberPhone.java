@@ -3,11 +3,13 @@ package HomeWorks.HomeWork3.Data;
 public class NumberPhone {
     public NumberPhone() {
     }
-    public void numberPhoneCheck(String s) {
+    public String checkNumberPhone(String s){
+        int numPhone;
         try {
-            Integer.parseInt(s);
+            numPhone = Integer.parseInt(s);
         } catch (NumberFormatException e){
-            System.out.println("неправильный номер телефона");
+            throw new NumberFormatException("Не верный формат номера толефона");
         }
+        return String.valueOf(numPhone);
     }
 }
