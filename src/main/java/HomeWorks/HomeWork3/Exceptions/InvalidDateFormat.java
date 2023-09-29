@@ -1,4 +1,4 @@
-package HomeWorks.HomeWork3;
+package HomeWorks.HomeWork3.Exceptions;
 
 public class InvalidDateFormat extends RuntimeException{
     public InvalidDateFormat(String message) {

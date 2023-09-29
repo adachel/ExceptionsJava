@@ -1,12 +1,14 @@
-package HomeWorks.HomeWork3;
+package HomeWorks.HomeWork3.Data;
 
 public class Gender {
-    public Gender(String s) {
+
+    public Gender() {
+    }
+    public void genderCheck(String s) {
         if (s.length() > 1 || !s.equals("m") || !s.equals("f")){
             throw new NumberFormatException("Не верный формат выбора пола");
         }
     }
 
-    public Gender() {
-    }
+
 }

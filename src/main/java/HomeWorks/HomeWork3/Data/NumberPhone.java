@@ -1,7 +1,9 @@
-package HomeWorks.HomeWork3;
+package HomeWorks.HomeWork3.Data;
 
 public class NumberPhone {
-    public NumberPhone(String s) {
+    public NumberPhone() {
+    }
+    public void numberPhoneCheck(String s) {
         try {
             Integer.parseInt(s);
         } catch (NumberFormatException e){

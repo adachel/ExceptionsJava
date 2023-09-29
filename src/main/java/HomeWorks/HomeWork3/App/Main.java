@@ -1,4 +1,6 @@
-package HomeWorks.HomeWork3;
+package HomeWorks.HomeWork3.App;
+
+import HomeWorks.HomeWork3.Controller;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -37,10 +39,9 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) throws ParseException {
         String data = "Петров Петр Петрович, 12.12.1982, 12345678, m";
-        InputData inputData = new InputData();
-        inputData.parseMetod(data);
-        System.out.println(inputData);
-
+        Controller controller = new Controller();
+        controller.metod(data);
+        controller.toString();
 
     }
 }

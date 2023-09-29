@@ -1,8 +1,12 @@
-package HomeWorks.HomeWork3;
+package HomeWorks.HomeWork3.Data;
+
+import HomeWorks.HomeWork3.Exceptions.InvalidDateFormat;
 
 public class MyDateType {
+    public MyDateType() {
+    }
 
-    public MyDateType(String string) {
+    public void myDateTypeCheck(String string) {
 
         String[] arr = string.split("\\.");
 
